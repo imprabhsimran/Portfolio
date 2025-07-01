@@ -23,55 +23,31 @@ const Projects = () => {
       websiteUrl: "https://artasta.netlify.app/",
     }
   ];
+
   return (
     <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
             <TrackVisibility>
-              {({ isVisible }) =>
+              {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
-                  <p>These are some of the web and mobile projects i created.</p>
-                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                      <Nav.Item>
-                        <Nav.Link eventKey="first">Web Applications</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="second">iOS Applications</Nav.Link>
-                      </Nav.Item>
-                      <Nav.Item>
-                        <Nav.Link eventKey="third">Android Applications</Nav.Link>
-                      </Nav.Item>
-                    </Nav>
-                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                      <Tab.Pane eventKey="first">
-                        <Row className="g-4"> {/* Add a gap between columns */}
-                          {
-                            projects.map((project, index) => (
-                              <ProjectCard key={index} {...project} />
-                            ))
-                          }
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="second">
-                        <p>iOS Apps</p>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="third">
-                        <p>Android Apps</p>
-                      </Tab.Pane>
-
-                    </Tab.Content>
-                  </Tab.Container>
-                </div>}
+                  <p>These are some of the web and mobile projects I created.</p>
+                  <Row className="g-4">
+                    {projects.map((project, index) => (
+                      <ProjectCard key={index} {...project} />
+                    ))}
+                  </Row>
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} />
     </section>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

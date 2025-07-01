@@ -1,6 +1,6 @@
 import React, { use } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import headerImage from '../Assets/img/Prabh.JPG'
+import headerImage from '../Assets/img/PrabhSuit.jpg'
 import { useState, useEffect } from 'react'
 
 const Banner = () => {
@@ -43,11 +43,27 @@ const Banner = () => {
                 <Col xs={12} md={6} xl={7}>
                     <span className='tagline'>Welcome to my Portfolio</span>
                     <h1>{'Hi, i am Prabh Simran Singh '}<span className='wrap'>({text})</span></h1>
-                    <p>I am a passionate and ambitious developer with a creative mindset, eager to explore opportunities in both iOS and web development. With a Bachelor's degree in Computer Applications, I thrive on continuous learning and enjoy diving into new technologies and frameworks to expand my expertise. In iOS development, I've had the privilege of working on diverse projects using SwiftUI and various frameworks like REST APIs, MapKit, Firebase, Core Data, and Realm, which have honed my ability to craft seamless and dynamic mobile applications. Beyond iOS, I bring proficiency in web technologies, including HTML, CSS, JavaScript, ReactJS, NodeJS, MongoDB, ExpressJS and SQL, enabling me to build responsive, user-friendly, and visually appealing web solutions. My dedication to innovation and adaptability drives me to deliver impactful digital experiences across platforms.</p>
+                    <p> I’m a curious problem solver and tech enthusiast who loves turning ideas into real, functional apps. With a strong foundation in computer applications, I’m always eager to learn and create.</p>
                 </Col>
-                <Col xs={12} md={6} xl={5}>
-                    <img src={headerImage} alt='Header Img' />
-                </Col>
+                <Col xs={12} md={6} xl={5} className="d-flex justify-content-center align-items-center">
+  <div style={{ width: "100%", maxWidth: "600px", aspectRatio: "1 / 1", overflow: "hidden" }}>
+  <img
+  src={headerImage}
+  alt="Header Img"
+  style={{
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    borderTopLeftRadius: "100px",   // Adjust as needed
+    borderTopRightRadius: "100px",
+    borderBottomLeftRadius: "100px",
+    borderBottomRightRadius: "100px" // Adjust as needed
+  }}
+/>
+
+  </div>
+</Col>
+
             </Row>
         </Container>
     </section>

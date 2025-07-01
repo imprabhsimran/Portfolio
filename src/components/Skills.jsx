@@ -2,10 +2,6 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from '../Assets/img/meter1.svg';
-import meter2 from '../Assets/img/meter2.svg';
-import meter3 from '../Assets/img/meter3.svg';
-import colorSharp from '../Assets/img/color-sharp.png';
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -47,7 +43,9 @@ const Skills = () => {
           <Col>
             <div className='skill-bx'>
               <h2>My Skills</h2>
-              <p> I possess strong expertise in both web and iOS development, with a deep understanding of HTML, CSS, JavaScript, React, and Node.js, alongside proficiency in Swift for iOS app development. My skills allow me to create responsive, dynamic, and user-friendly web applications while also delivering seamless, high-performance iOS apps. I am proficient in building intuitive user interfaces and ensuring smooth cross-platform functionality. Additionally, my ability to integrate APIs and manage data effectively enables me to create applications that meet both user and business needs. I am committed to delivering robust, efficient, and scalable solutions that provide exceptional user experiences on both web and mobile platforms.</p>
+              <p>I specialize in iOS development using Swift and SwiftUI, focusing on building clean, intuitive, and high-performance native apps. I integrate technologies like Firebase, Core Data, RESTful APIs, and MapKit to deliver dynamic, feature-rich experiences with responsive UI design and scalable, maintainable code.<br></br> At the same time, I have a strong command of modern web technologies such as HTML, CSS, JavaScript, React, and Node.js. I build responsive, user-friendly web interfaces supported by solid backend infrastructure using Express and MongoDB. With a foundation in C++, Java, and SQL, I approach problems logically and create full-stack solutions that are both visually compelling and technically robust.<br></br>This combined expertise allows me to craft seamless, high-quality experiences across both mobile and web platforms..</p>
+
+
 
               <div className='skill-name'> 
 

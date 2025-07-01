@@ -6,6 +6,7 @@ import Skills from './components/Skills.jsx';
 import Projects from './components/Projects.jsx';
 import Contact from './components/Contact.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Education from './components/Education.jsx';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner />
+      <Education />
       <Projects />
       <Skills />
     </div>
