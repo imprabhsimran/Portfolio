@@ -42,8 +42,8 @@ const Banner = () => {
             <Row className='align-items-center'>
                 <Col xs={12} md={6} xl={7}>
                     <span className='tagline'>Welcome to my Portfolio</span>
-                    <h1>{'Hi, i am Prabh Simran Singh '}<span className='wrap'>({text})</span></h1>
-                    <p> I’m a curious problem solver and tech enthusiast who loves turning ideas into real, functional apps. With a strong foundation in computer applications, I’m always eager to learn and create.</p>
+                    <h1>{'Hi, I am Prabh Simran Singh '}<span className='wrap'>({text})</span></h1>
+                    <p> A curious problem solver and tech enthusiast who loves turning ideas into real, functional apps. With a strong foundation in computer applications, I’m always eager to learn and create.</p>
                 </Col>
                 <Col xs={12} md={6} xl={5} className="d-flex justify-content-center align-items-center">
   <div style={{ width: "100%", maxWidth: "600px", aspectRatio: "1 / 1", overflow: "hidden" }}>
